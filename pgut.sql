@@ -35,7 +35,7 @@ end
 $$
 language plpgsql;
 
--- select remove_repeated_word('this is is a text');
+-- example: select remove_repeated_word('this is is a text');
 
 -----------------------------------------
 
@@ -48,6 +48,6 @@ end
 $$
 language plpgsql;
 
---select validate_ip('25.34.0xFF.0x0c');
+-- example: select validate_ip('25.34.0xFF.0x0c');
 
 -----------------------------------------
