@@ -13,7 +13,6 @@ language plpgsql immutable;
 
 -----------------------------------------
 
-
 create or replace function validate_dbl(s text)
 returns boolean as
 $$
@@ -26,7 +25,6 @@ language plpgsql immutable;
 -- example: select validate_dbl('-100.1221e-308')
 
 -----------------------------------------
-
 
 create or replace function remove_repeated_word(s text)
 returns text as
