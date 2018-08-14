@@ -51,3 +51,16 @@ language plpgsql;
 -- example: select validate_ip('25.34.0xFF.0x0c');
 
 -----------------------------------------
+
+create or replace function remove_repeated_spaces(s text)
+returns text as
+$$
+begin
+return regexp_replace(s, '\s{2,}', ' ', 'g');
+end
+$$
+language plpgsql;
+
+-- example: remove_repeated_spaces('this   is a    table')
+
+-----------------------------------------
